@@ -500,7 +500,7 @@ int main(int argc, char** argv)
 		std::vector<int16_t> samples;
 		samples.reserve(numSamples);
 		f.read(samples, numSamples);
-		printf("done\n");
+		printf("done (%d samples)\n", numSamples);
 
 		printf("Preprocessing to positive with decay strength %d...", high_pass_shift);
 		std::vector<int16_t> offsets;
